@@ -1,0 +1,5 @@
+1. Compile and run the setup file. This will create a database and initiallizes it with 20 dummy records, 10 of which are single-user accounts and 10 are joint user accounts. There is also an admin account present. So, there are 21 in total. 
+2. All the records are given id as a single digit positive integer greater than 1, and their password is set as the smallest id corresponding to the account. All the account has a default balance of 0.
+3. Compile and run the server file. The server is meant to run in the background and it only outputs on STDERR or to the client. 
+4. Compile and run the client file. A total of 1024 connections can be made to the server between each server start and server shutdown. Connections can be made simultaneously but two connections cannot be made through the same id. 
+5.  To shut the server down, login as the admin (id = 1, password = password) and select the appropriate option. 
